@@ -1,0 +1,65 @@
+{
+  "name": "pcap-anonymizer",
+  "version": "1.0.0",
+  "description": "Browser-based PCAP anonymization tool using SHAKE256 hashing and field masking",
+  "author": "H21 lab",
+  "license": "GPL-2.0",
+  "homepage": ".",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/H21lab/pcap-anonymizer"
+  },
+  "keywords": [
+    "pcap",
+    "anonymization",
+    "network",
+    "wireshark",
+    "privacy",
+    "packet-capture"
+  ],
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@goodtools/wiregasm": "^1.9.0",
+    "@mui/icons-material": "^7.3.6",
+    "@mui/material": "^7.3.6",
+    "@types/node": "^16.18.126",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@types/react-window": "^1.8.8",
+    "buffer": "^6.0.3",
+    "js-sha3": "^0.9.3",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "react": "^19.2.3",
+    "react-app-rewired": "^2.2.1",
+    "react-dom": "^19.2.3",
+    "react-resizable-panels": "^4.0.15",
+    "react-scripts": "5.0.1",
+    "react-virtuoso": "^4.17.0",
+    "react-window": "^2.2.3",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

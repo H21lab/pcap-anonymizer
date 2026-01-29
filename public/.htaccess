@@ -1,0 +1,19 @@
+
+# 1. Correct MIME type for WASM
+AddType application/wasm .wasm
+
+# 2. Required Security Headers for WASM memory
+<IfModule mod_headers.c>
+    Header set Cross-Origin-Embedder-Policy "require-corp"
+    Header set Cross-Origin-Opener-Policy "same-origin"
+</IfModule>
+
+# 3. Handle React Routing for subfolder /pcap-anonymizer/
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /pcap-anonymizer/
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /pcap-anonymizer/index.html [L]
+</IfModule>
